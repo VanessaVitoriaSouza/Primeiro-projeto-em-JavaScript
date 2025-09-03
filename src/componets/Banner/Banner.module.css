@@ -1,0 +1,9 @@
+.banner{
+    width: 100%; /* O tamanho da imagem utilizada no projeto 1920 por 347 px*/
+    height: 347px;
+    /*background-image: url('/public/images/banner-home.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 68px;
+}

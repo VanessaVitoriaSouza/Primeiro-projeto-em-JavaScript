@@ -1,6 +1,6 @@
-import styles from "./Header.module.css"
+import styles from "./Header.module.css";
 
-function Header() {
+function Header () {
     return (
         <header className={styles.header}>
             <span>Movies</span>
