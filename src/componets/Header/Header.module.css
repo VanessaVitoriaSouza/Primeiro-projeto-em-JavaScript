@@ -1,0 +1,26 @@
+header {
+    background-color: #00000050;       /* Define a cor de fundo do cabeçalho como preto  ------- QUANDO COLOCA 6 DIGITOS O DOIS ULTIMOS QUE VOCE ADICIONAR SERA DE TRANSPARENCIA... */
+    border-bottom: 1px solid #f44336;    /* Adiciona uma borda inferior vermelha de 2px */
+    position: fixed;                      /* Fixa o cabeçalho no topo da página */
+    top: 0;                               /* Posiciona exatamente no topo da tela */
+    width: 100%;                              /* Ocupa toda a largura da tela */
+    height: 68px;
+    display: flex;
+    font-size:1.5rem;
+    align-items: center;                  /* Alinha verticalmente os itens ao centro */
+    justify-content: space-around;       /* Espaça os itens horizontalmente com espaço entre eles */
+}
+
+
+
+.header span {
+    font-size: 2rem;                      /* Tamanho da fonte maior para destaque */
+    color: #b71c1c;                       /* Cor do texto (tom de vermelho) */
+    font-weight: 200;                      /* Espessura intermediária da fonte */
+}
+.header a {
+    text-decoration: none;                /* Remove o sublinhado dos links */
+    color: #fff;                           /* Cor do texto do link branco */
+    padding-inline: 1rem;               /* Espaçamento horizontal interno dos links */
+    font-size:1.125rem ;                 /* Equivale a 18px */
+}
