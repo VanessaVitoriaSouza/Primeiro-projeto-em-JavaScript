@@ -1,32 +1,30 @@
-import video from "../../json/videos.json"
+import videos from "../../json/videos.json"; // voltou dois niveis para percorrer o arquivo que deseja
+
 import styles from "./Category.module.css";
 
-
-const categories = [
+export const categories = [
     "Geografia",
     "Como fazer e usar",
     "Astronomia e Geografia",
-    "Climatologia, Meteoroogia, Vegetação",
+    "Climatologia, Meteorologia, Vegetação",
     "Geologia e Hidrografia"
 ]
 
-
-function filterCategoty(id) {
-    return video.filterCategoty(video => video.category === categories[id])
+ export function filterCategory(id) {
+    return videos.filter(video => video.category === categories[id]);
 }
 
 
-function Category({Category, children}) {
+
+function Category({category, children}) {
     return (
-        <section className= {styles.Category}>
-            <h2>{Category}</h2>
-            <div>
+        <section className={styles.category}>
+        <h2> {category}</h2>
+             <div>
                 {children}
-
-            </div>
-
+            </div>         
         </section>
-    )
+    );
 }
 
-export default Category
+export default Category;
