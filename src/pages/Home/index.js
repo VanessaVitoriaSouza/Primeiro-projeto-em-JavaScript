@@ -4,21 +4,26 @@ import Container from "../../componets/Container";
 import Header from "../../componets/Header";
 import Footer from "../../componets/Header/Footer";
 import Category, {categories, filterCategory} from "../../componets/Category";
+import { useState } from "react";
 
 
 function Home() {
+
+  
+
     return (
         <div>
             <Header />
             <Banner image="home" />
             <Container>
 
+
+
                 { categories.map((category, index) =>
                 <Category category={category} >
                     {filterCategory(index).map((video) => <Card id={video.id} key={video.id}/>)}
                     </Category> 
                  )}
-               
         
            
             </Container>
